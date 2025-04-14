@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Fredoka', sans-serif;
   margin: 0;
@@ -7,6 +11,10 @@ body {
   background-color: #f0f4f8;
   color: #222;
   transition: background 0.5s ease, color 0.5s ease;
+}
+
+section {
+  scroll-margin-top: 120px;
 }
 
 .console-mode {
@@ -45,7 +53,7 @@ header h1 {
   min-height: 1.5rem;
 }
 
-/* Base Navbar Styles */
+/* Navbar */
 .navbar {
   background-color: #0a9396;
   padding: 0.75rem 1rem;
@@ -75,7 +83,7 @@ header h1 {
   background-color: #00b4d8;
 }
 
-/* Hamburger Button */
+/* Hamburger */
 .hamburger {
   display: none;
   font-size: 1.8rem;
@@ -83,7 +91,6 @@ header h1 {
   cursor: pointer;
 }
 
-/* Mobile Styles */
 @media (max-width: 768px) {
   .hamburger {
     display: block;
@@ -108,8 +115,6 @@ header h1 {
     width: 100%;
   }
 }
-
-
 
 /* Layout */
 main {
@@ -290,12 +295,12 @@ footer {
     height: 200px;
   }
 }
-
-
-html {
-  scroll-behavior: smooth;
-}
-
 section {
-  scroll-margin-top: 120px;
+  scroll-margin-top: 100px;
+  min-height: 100vh;
+  padding: 3rem 2rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
